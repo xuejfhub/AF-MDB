@@ -1,0 +1,79 @@
+# ==============================================================================
+# Git Ignore Rule for AF-MDB Project
+# ==============================================================================
+
+# 1. System & IDE
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.github/
+*.code-workspace
+.settings/
+**/.settings/
+*.launch
+*.mxproject
+
+# 2. Software (STM32)
+Debug/
+**/Debug/
+Release/
+**/Release/
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.o
+*.d
+*.su
+
+# 3. Simulation (MATLAB/Simulink)
+slprj/
+**/slprj/
+*_ert_rtw/
+**/(*_ert_rtw)/
+!3.Simulation/FOC_ert_rtw/
+!3.Simulation/FOC_ert_rtw/**
+*.slxc
+*.autosave
+*.asv
+*.mlx.bak
+
+# 4. Hardware (CAD)
+*.FCStd1
+*.FCStd2
+*.bak
+*.step.bak
+*.bkp
+*.~*
+1.Hardware/**/BOM_*.xlsx
+1.Hardware/**/BOM_*.XLSX
+1.Hardware/**/PickAndPlace_*.xlsx
+1.Hardware/**/PickAndPlace_*.XLSX
+
+# 5. Output & Generated
+output/
+**/output/
+
+# 6. Large Binaries & External
+ST-link_firmware/
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.mp4
+*.avi
+*.mov
+*.bmp
+*.pptx
+
+# 7. Private Resources
+5.参考资料/
+6.Backup/
+1.Hardware/V5.0/
+2.Software/V5.0/
+/开源文件树与清理清单.md
+*.log
+*.tmp
